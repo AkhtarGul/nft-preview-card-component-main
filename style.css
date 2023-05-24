@@ -1,0 +1,98 @@
+:root {
+    /*Primary*/
+    --primary-soft-blue: hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+
+    /*Neutral*/
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line-: hsl(215, 32%, 27%);
+    --Neutral-White: hsl(0, 0%, 100%);
+
+    /*Typography*/
+
+    --font-size-18: 18px;
+    --font-weight-300:300;
+    --font-weight-400:400;
+    --font-weight-500:500;
+    --font-family: 'Outfit', sans-serif;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+main{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--Very-dark-blue-main-BG);
+}
+
+.card{
+    box-shadow: 6px 5px 35px 5px var(--Very-dark-blue-main-BG);
+    background: var(--Very-dark-blue-card-BG);
+    box-sizing: border-box;
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 20px;
+   
+}
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+.card h1{
+    font-size: var(--font-size-18);
+    color: var(--Neutral-White);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.card p{
+    color: var(--primary-soft-blue);
+}
+
+.profile-icon{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.profile-icon img{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--Neutral-White);
+}
+
+.first{
+    color: var(--primary-soft-blue);
+}
+.seceond{
+    color: var(--Neutral-White);
+}
+.content{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.color-gray{
+color: var(--primary-soft-blue);
+}
+.color-cyan{
+    color: var(--primary-cyan);
+}
+.content-item{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.horizontal-line{
+    margin: 2em;
+    margin: 2em 0px;
+    border: 0.01px solid var(--primary-soft-blue);border: 0.01px solid var(--primary-soft-blue);
+    
+}
